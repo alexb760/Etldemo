@@ -15,9 +15,9 @@ public class DemoApplication {
 	{
 		DriverManagerDataSource ds = new DriverManagerDataSource();
 		ds.setDriverClassName(oracle.jdbc.driver.OracleDriver.class.getName());
-		ds.setUrl("jdbc:oracle:thin:@localhost:1521:cms01");
-		ds.setUsername("system");
-		ds.setPassword("cms12345");
+		ds.setUrl("jdbc:oracle:thin:@localhost:1521:your_instance");
+		ds.setUsername("your_user");
+		ds.setPassword("your_pass");
 		return ds;
 	}
 	public static void main(String[] args) {
